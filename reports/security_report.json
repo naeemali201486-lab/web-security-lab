@@ -1,0 +1,23 @@
+{
+  "service": "web-security-practice-lab",
+  "tests": [
+    {
+      "test": "Health endpoint",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "test": "Training endpoint",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "test": "Search endpoint",
+      "status": "PASS",
+      "http_status": 200
+    }
+  ],
+  "passed": 3,
+  "failed": 0,
+  "overall": "PASS"
+}
