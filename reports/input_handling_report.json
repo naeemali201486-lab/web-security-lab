@@ -1,0 +1,16 @@
+{
+  "service": "web-security-practice-lab",
+  "test": "input_handling",
+  "target": "127.0.0.1:9300/api/search",
+  "results": [
+    {"case": "normal", "status": "PASS", "http_status": 200},
+    {"case": "quotes", "status": "PASS", "http_status": 200},
+    {"case": "angle_brackets", "status": "PASS", "http_status": 200},
+    {"case": "unicode", "status": "PASS", "http_status": 200},
+    {"case": "spaces", "status": "PASS", "http_status": 200},
+    {"case": "long_input", "status": "PASS", "http_status": 200}
+  ],
+  "passed": 6,
+  "failed": 0,
+  "overall": "PASS"
+}
