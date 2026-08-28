@@ -1,0 +1,43 @@
+[
+  {
+    "timestamp": "2026-08-29T01:00:00+05:00",
+    "level": "INFO",
+    "event": "endpoint_discovery",
+    "details": {
+      "endpoint": "/",
+      "method": "GET",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-08-29T01:01:00+05:00",
+    "level": "INFO",
+    "event": "search_request",
+    "details": {
+      "endpoint": "/api/search",
+      "query_type": "normal",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-08-29T01:02:00+05:00",
+    "level": "WARN",
+    "event": "unsupported_method",
+    "details": {
+      "endpoint": "/api/search",
+      "method": "POST",
+      "status": 501
+    }
+  },
+  {
+    "timestamp": "2026-08-29T01:05:00+05:00",
+    "level": "INFO",
+    "event": "training_endpoint_access",
+    "details": {
+      "endpoint": "/api/training",
+      "method": "GET",
+      "status": 200,
+      "source": "web-security-practice-lab"
+    }
+  }
+]
