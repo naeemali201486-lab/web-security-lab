@@ -14,6 +14,13 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status)
         self.send_header("Content-Type", "application/json")
         self.send_header("Content-Length", str(len(body)))
+
+        # Basic security headers for the local practice API
+        self.send_header("X-Content-Type-Options", "nosniff")
+        self.send_header("X-Frame-Options", "DENY")
+        self.send_header("Content-Security-Policy", "default-src 'none'")
+        self.send_header("Cache-Control", "no-store")
+
         self.end_headers()
         self.wfile.write(body)
 
