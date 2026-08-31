@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.log
+*.backup
+data/runtime_events.json
